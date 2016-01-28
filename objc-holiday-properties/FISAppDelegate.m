@@ -17,7 +17,7 @@
 - (NSArray *)suppliesInHoliday:(NSString *)holiday
                       inSeason:(NSString *)season {
     
-    return nil;
+    return self.database[season][holiday];;
 }
 
 - (BOOL)holiday:(NSString* )holiday
