@@ -36,7 +36,7 @@
 - (void)addHoliday:(NSString *)holiday
           toSeason:(NSString *)season {
     
-    // no return
+    [self.database[season] setObject:[NSMutableArray array] forKey:holiday];
 }
 
 - (void)addSupply:(NSString *)supply
