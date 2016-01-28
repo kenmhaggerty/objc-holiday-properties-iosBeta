@@ -43,7 +43,7 @@
         toHoliday:(NSString *)holiday
          inSeason:(NSString *)season {
     
-    // no return
+    [self.database[season][holiday] addObject:supply];
 }
 
 @end
