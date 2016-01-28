@@ -30,7 +30,7 @@
    isInHoliday:(NSString *)holiday
       inSeason:(NSString *)season {
     
-    return nil;
+    return [self.database[season][holiday] containsObject:supply];
 }
 
 - (void)addHoliday:(NSString *)holiday
