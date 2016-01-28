@@ -23,7 +23,7 @@
 - (BOOL)holiday:(NSString* )holiday
      isInSeason:(NSString *)season {
     
-    return nil;
+    return [[self.database[season] allKeys] containsObject:holiday];
 }
 
 - (BOOL)supply:(NSString *)supply
